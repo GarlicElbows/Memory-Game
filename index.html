@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Matching Application Icon Game!</title>
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Matching Application Icon Game!</h1>
+      </header>
+      <section class="score-panel">
+        <ul class="stars">
+          <li>
+            <i class="fa fa-star skill-star"></i>
+          </li>
+          <li>
+            <i class="fa fa-star skill-star"></i>
+          </li>
+          <li>
+            <i class="fa fa-star skill-star"></i>
+          </li>
+        </ul>
+        <span class="moves">0</span> Moves
+        <div class="restart"><i class="fa fa-repeat"></i> Reset game</div>
+      </section>
+      <div id="overallTime">00:00:00</div>
+      <ul class="deck"></ul>
+    </div>
+
+    <div class="popup">
+      <div class="message">
+        <span class="close">&times;</span>
+        <h1>Well done!</h1>
+        <p>
+          You finished the game in time <span id="timer"> 00:00:00 </span> with
+          total number of moves:
+          <span id="moves">0</span>
+          <br />
+          your star rating: <span id="rating">0</span> out of 3
+        </p>
+        <p>thanks for playing and have a nice day</p>
+      </div>
+    </div>
+
+    <script src="js/timer.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
